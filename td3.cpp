@@ -55,8 +55,6 @@ double* remove_from_array(double* array,
                           int &current_size,
                           int &max_size) {
     current_size-=1;
-
-    //if( 5+current_size>=max_size)
     if( max_size-current_size>=5) {
         array = shrink_array(array, max_size,  max_size-5);
         max_size = max_size - 5;
